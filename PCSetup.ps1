@@ -18,7 +18,7 @@ function InstallChoco {
 
 
 function AutomateInstall{
-msiexec /i c:\PurpleJelly\DeviceSetup-main\Agent_Install.msi /qn /lv c:\PurpleJelly\agent_install_log.txt
+msiexec /i c:\PurpleJelly\JellyScript-main\Agent_Install.msi /qn /lv c:\PurpleJelly\agent_install_log.txt
 }
 
 function DisableFastStartup{
@@ -33,7 +33,7 @@ w32tm /resync
 }
 
 function Bitlocker{
-Start-Process "cmd.exe" "/c C:\PurpleJelly\DeviceSetup-main\BitlockerConfigurator.bat"
+Start-Process "cmd.exe" "/c C:\PurpleJelly\JellyScript-main\BitlockerConfigurator.bat"
 }
 
 
