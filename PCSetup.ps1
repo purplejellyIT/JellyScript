@@ -26,7 +26,7 @@ function AutomateInstall{
         Start-Process powershell.exe "-NoProfile -ExecutionPolicy Bypass -File `"$PSCommandPath`"" -Verb RunAs
         Exit
     }    
-    msiexec /i c:\PurpleJelly\JellyScript-main\StagingArea_NinjaRMM_Auto.msi /qn /lv c:\PurpleJelly\NinjaRMM_agent_install_log.txt
+    msiexec /i "https://eu.ninjarmm.com/agent/installer/9efedd3e-a570-4f07-84d2-741b855b1eb9/stagingareamainoffice3154b8-5.3.5097-windows-installer.msi" /qn /lv c:\PurpleJelly\NinjaRMM_agent_install_log.txt
 }
 
 function DisableFastStartup{
